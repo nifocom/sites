@@ -1,0 +1,267 @@
+body {
+
+    font-family: Arial;
+}
+/* --------------- TEMP ----------------*/
+.main_ui_layout_north
+{height: 152px;
+  background: url(../../img/main/main_ui_layout_north.png) no-repeat scroll center top transparent;
+}
+.my_social_life
+{height: 212px ;
+    background: url(../../img/main/my_social_life.png) no-repeat scroll center top transparent;
+}
+.message_inside
+{height: 661px ;
+    background: url(../../img/main/message_inside.png) no-repeat scroll center top transparent;
+}
+.mail_message
+{height: 438px ;
+    width: 204px;
+    background: url(../../img/main/mail_message.png) no-repeat scroll center top transparent;
+}
+.settings_message
+{height: 438px ;
+    width: 204px;
+    background: url(../../img/main/settings_message.png) no-repeat scroll center top transparent ;
+}
+.footer
+{height: 55px ;
+
+    background: url(../../img/main/footer.png) no-repeat scroll center top transparent ;
+}
+.categories
+{height: 438px ;
+    width: 205px;
+    background: url(../../img/main/categories.png) no-repeat scroll center top transparent ;
+}
+.about
+{height: 435px ;
+    width: 205px;
+    background: url(../../img/main/about.png) no-repeat scroll center top transparent ;
+}
+/* --------------- TEMP ----------------*/
+/* ------------------------------------ MESSAGE WINDOW ----------------------------*/
+.mb_content_wrapper {
+    background: transparent url(../../img/index/contact.png) center top no-repeat;
+    width: 896px;
+    height: 696px;
+    position: relative;
+    top: 0;
+    left: 57px;
+    z-index: 3000;
+    display: block;
+    overflow: hidden;
+    margin: 0 auto;
+}
+span.mb_close {
+    background: url("../../img/index/close.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    right: 74px;
+    top: 68px;
+    width: 16px;
+}
+.mb_content {
+    padding: 30px;
+}
+span.mb_close:hover
+{
+    background: url("../../img/index/close.png") no-repeat scroll left -16px transparent;
+}
+.mb_content h2 {
+    font-family: "Arial" ;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 36px 0 20px -4px;
+}
+.mb_content h2 span {
+    font-weight: normal;
+}
+.send_form {
+    margin: 13px 0 0 72px;
+}
+.send_form>div {
+    clear: both;
+    color: #A4A3A3;
+    float: left;
+    font-size: 14px;
+    width: 725px;
+    height: 28px;
+}
+.mb_content form label {
+    float: left;
+    margin-top: 2px;
+    margin-right: 17px;
+    text-align: left;
+    width: 135px;
+}
+.f_send .send {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    border: none;
+    outline: none;
+    background: url(../../img/index/send.png) no-repeat;
+    width: 96px;
+    height: 26px;
+    float: right;
+    margin: 3px 32px 0 0;
+    opacity: 1;
+    cursor: pointer;
+}
+.send:hover {
+    opacity: .9;
+}
+.f_message>div
+{float: right;
+margin: 0 36px;
+width: 535px !important;
+margin-top: -15px;}
+.f_message .nicEdit-messager
+{margin: 0 34px;
+height: 200px;}
+.nicEdit-main
+{height: 186px !important;
+min-height: 186px !important;}
+.mb_content form input, .mb_content form textarea {
+    border: 2px solid #E4E4E4;
+    background: white;
+    width: 531px;
+    font-family: Arial ;
+    color: #8F8F8F;
+    font-size: 12px;
+    height: 22px;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -khtml-border-radius: 8px;
+    margin-top: -4px;
+    padding: 0 0 0 6px;
+}
+.mb_content form input:focus,
+.mb_content form textarea:focus
+{
+    border: 2px solid #52a7ce;
+    height: 22px;
+    outline: none;
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+}
+.mb_content form .pad {
+    padding: 5px 0px;
+}
+.send_form .f_message {
+    height: 287px;
+}
+.mb_content form textarea,.mb_content form textarea:focus {
+    height: 277px;
+}
+
+
+.f_send {
+    float: right !important;
+    margin: 0 39px 0 0;
+    width: 300px !important;
+}
+
+.suggest2 {
+    color: #A5A5A5;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    margin: -40px 0 0 72px;
+    text-align: left;
+    width: 432px;
+}
+.suggest2 span {
+    margin: 0 0 0 -5px;
+}
+/* ------------------------------------ MESSAGE WINDOW ----------------------------*/
+/* ------------------------------------ MAIL LIST ----------------------------*/
+.mail {
+    height: 620px;
+    width: 810px;
+    float: right;
+    margin: 18px 15px 0 0;}
+.mail_info_line {
+    width: 810px;
+    height: 30px;
+    display: block;
+    background: url(../../img/main/mail/mail_info_line.png) no-repeat}
+.mail_table
+{   table-layout: fixed;
+    cursor: pointer;
+    width: 100%;
+    border-spacing: 0;
+    padding: 0;}
+.m_cell {
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 3px 0 0px;
+    height: 33px;}
+.m_cell_bord { border-bottom: 1px #d1d1d1 solid;}
+.st{width: 32px}
+.nd{width: 11px}
+.rd{width: 17px}
+.th{width: 213px}
+.ve{width: 3px}
+.ix{width: 432px}
+.en{width: 36px}
+.ht{width: 35px}
+.ne{width: 30px}
+.f_st span {padding-left: 8px;}
+.f_st span::before {content:url(../../img/main/mail/1_st.png) no-repeat;}
+.f_rd_prior {width: 15px;height: 15px; padding: 1px 0px 0px 1px;}
+.f_rd_prior div {
+    background: url(../../img/main/mail/3_d_green.png) no-repeat;
+    width:10px;
+    height:10px;  }
+.f_th {
+    background: url(../../img/main/mail/mail_sender.png) no-repeat 0 1px;
+    color:#55c3fe;
+    font: bold 12px/10px 'Arial';
+    padding: 1px 0 0 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;}
+.f_th span {padding: 0 0 0 14px;}
+.f_th_time {color:#646464;font: normal  10px/10px 'Arial';}
+
+tr.read_letter .f_th {background: url(../../img/main/mail/mail_sender_hover.png) no-repeat 0 1px;}
+tr.read_letter .f_th_time,tr:hover .f_th_name, tr:hover .f_ix span {color:#fff;}
+tr.read_letter .f_ix {background: url(../../img/main/mail/ix_hover.png) no-repeat 0 1px;}
+.f_ix {
+    background: url(../../img/main/mail/ix.png) no-repeat 0 1px;width: 432px;
+    padding: 0;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;}
+.f_ix span {
+    font: bold 12px/10px 'Arial';
+    color: #555555;
+    padding: 0 0 0 12px;}
+.f_en {padding: 3px 0 0 7px;}
+.f_en div {
+    background: url(../../img/main/mail/read.png) no-repeat;
+    width: 22px;
+    height: 22px;
+}
+.f_ht {padding: 3px 0 0 4px;}
+.f_ht div {
+    background: url(../../img/main/mail/spam.png) no-repeat;
+    width: 22px;
+    height: 22px;
+}
+.f_ne {padding: 3px 0 0 4px;}
+.f_ne div {
+    background: url(../../img/main/mail/delete.png) no-repeat;
+    width: 22px;
+    height: 22px;
+}
+.f_en,.f_ht,.f_ne {
+    opacity:0.6;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;}
+.f_en:hover,.f_ht:hover,.f_ne:hover {opacity:1;}
+/* ------------------------------------ MAIL LIST ----------------------------*/

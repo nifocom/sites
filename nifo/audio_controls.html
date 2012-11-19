@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <link rel="stylesheet" href="css/player/audioplayer.css" />
+	<meta charset="UTF-8">
+	<title>audio controls</title>
+</head>
+<body>
+<div class="audio_player_controls">
+    <div class="audio_player_controls_left">
+        <div class="audio_player_controls_left_volume">
+            <div class="min_volume_panel">
+                <div id="sound_toggle"  switch="1" class="t_vol_dot vp_soundOnOff"></div>
+            </div>
+            <div class="volume_slider">
+                <div class="volume_slider_slider_volume">
+                    <div class='volume_helper'></div>
+                    <div id="slider-vertical" class="vp_volume" style="height:13px;width:56px"><span class="l_vol_progress"></span></div>
+                </div>
+            </div>
+            <div class="volume_max">
+                <div class="volume_max_circle vp_volumeMax"></div>
+            </div>
+        </div>
+        <div class="player_controls_shuffle">
+            <div class="t_shuffle"></div>
+        </div>
+    </div>
+    <div class="audio_player_controls_center">
+        <div class="player_controls_time_current"><span id="currenttime" class="time "></span></div>
+        <div class="timeline">
+					            <span id="progress">
+                                    <div id="current" class="vp_timeline"><span class="r_corner"></span></div>
+                                    <div class='progress_helper'></div>
+					            </span>
+        </div>
+        <div class="player_controls_time_full"><span id="duration" class="timer "></span></div>
+    </div>
+    <div class="audio_player_controls_right">
+        <div class="repeat_panel">
+            <div class="t_repeat"></div>
+        </div>
+        <div class="controls_panel">
+            <div id="previousVideo" switch="1" class="t_prev vp_previous"></div>
+            <div class="t_play"></div>
+            <div id="nextVideo" switch="1" class="t_next vp_next"></div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="js/libs/jquery.min.js"></script>
+<script src="js/libs/jquery-ui.min.js" ></script>
+<script src="js/nifo/elements/player/player.js"></script>
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+
+        $(".audio_player_controls").hover(function () {
+
+            $(".audio_player_controls_center").addClass('hover_top');
+            $(".buffered").addClass('hover_buffered');
+            $("#current .ui-slider-range").addClass('progress_hover');
+            $("#current a").addClass('progress_dot');
+            $(".progress_helper").addClass('hover_helper');
+        }).mouseleave(function () {
+
+                    $(".audio_player_controls_center").removeClass('hover_top');
+                    $(".buffered").removeClass('hover_buffered');
+                    $("#current .ui-slider-range").removeClass('progress_hover');
+                    $("#current a").removeClass('progress_dot');
+                    $(".progress_helper").removeClass('hover_helper');
+                });
+        $(".pl_next").click(function () {
+            $(this).animate({  opacity: 0.9  }, 25);
+        }).mouseleave(function () {
+                    $(this).animate({  opacity: 1  }, 50);
+                });
+        $(".pl_prev").click(function () {
+            $(this).animate({  opacity: 0.9  }, 25);
+        }).mouseleave(function () {
+                    $(this).animate({  opacity: 1  }, 50);
+                });
+
+
+
+
+    });
+</script>
+</body>
+</html>

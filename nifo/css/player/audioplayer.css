@@ -1,0 +1,342 @@
+#audioContainer
+{margin: 0 0 0 110px;}
+.audio_player_controls {
+    width: 800px;
+    height: 22px;
+    background: url(../../img/player/small/body.png) no-repeat;
+    margin: 0 auto -24px;
+    position: relative;
+}
+.hover_top
+{background:url(../../img/player/small/center_hover.png) no-repeat !important;
+
+}
+.audio_player_controls_left, .audio_player_controls_right, .audio_player_controls_center {
+    height: 24px;
+}
+
+.audio_player_controls_left, .audio_player_controls_right {
+    width: 180px;
+    float: left;
+}
+
+.audio_player_controls_center {
+    width: 440px;
+    float: left;
+    background: url(../../img/player/small/center.png) no-repeat;
+}
+
+.audio_player_controls_left_volume div {
+    float: left;
+}
+
+.audio_player_controls_left_volume .t_vol_dot {
+    background: url(../../img/player/small/vol_but.png) no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 9px;
+    margin: 6px 3px 0 0;
+    width: 9px;
+}
+
+.audio_player_controls_left_volume .t_vol_dot:hover {
+    background-position: 0 -9px;
+}
+
+.audio_player_controls_left_volume {
+    width: 154px;
+    height: 24px;
+    float: left;
+}
+
+.audio_player_controls_left_volume .min_volume_panel {
+    width: 37px;
+}
+
+.audio_player_controls_left_volume .volume_slider {
+    width: 75px;
+    position: relative;
+    background: url(../../img/player/small/vol_bg.png) no-repeat scroll 1px 4px transparent;
+}
+
+.audio_player_controls_left_volume .volume_max {
+    width: 40px;
+}
+
+.player_controls_shuffle {
+    width: 26px;
+    float: left;
+}
+.repeat_panel {
+    float: left;
+    width: 26px;
+}
+.controls_panel {
+    width: 98px;
+    float: left;
+}
+.controls_panel .inactive_next {
+    background: url(../../img/player/small/next_inactive.png) no-repeat !important;
+}
+.t_left_panel_7 {
+    float: left;
+    width: 52px;
+}
+.repeat_panel .t_repeat:hover {
+    background-position: 0 -15px;
+}
+.repeat_panel .t_repeat {
+    background: url(../../img/player/small/repeat.png) no-repeat;
+    width: 20px;
+    height: 15px;
+    margin: 4px 0 0 4px;
+}
+.controls_panel .t_prev {
+    background: url(../../img/player/small/prev.png) no-repeat;
+    width: 18px;
+    height: 12px;
+    margin: 5px 0 0 17px;
+}
+.controls_panel .t_prev:hover, .controls_panel .t_next:hover {
+    background-position: 0 -12px;
+}
+.controls_panel .inactive_prev {
+    background: url(../../img/player/small/prev_inactive.png) no-repeat !important;
+}
+.controls_panel .t_play:hover {
+    background-position: 0 -16px;
+}
+.controls_panel .t_play {
+    background: url(../../img/player/small/play.png) no-repeat;
+    width: 17px;
+    height: 16px;
+    margin: 3px 0 0 8px;
+}
+.controls_panel div {
+    float: left;
+}
+.controls_panel .t_prev:hover, .controls_panel .t_next:hover {
+    background-position: 0 -12px;
+}
+.controls_panel .t_next {
+    background: url(../../img/player/small/next.png) no-repeat;
+    width: 18px;
+    height: 12px;
+    margin: 5px 0 0 7px;
+}
+.audio_player_controls_left_volume .min_volume_panel, .audio_player_controls_left_volume .volume_slider, .audio_player_controls_left_volume .volume_max, .player_controls_shuffle, .repeat_panel {
+    height: 24px;
+}
+
+.t_vol_dot, .volume_max_circle, .t_shuffle, #total, .t_repeat, .t_prev, .t_play, .t_next, .t_close {
+    cursor: pointer;
+}
+
+.audio_player_controls_left_volume .volume_slider_slider_volume {
+    margin: 4px 0 0 13px;
+}
+.audio_player_controls_left_volume .off {
+    background-position: 0 -9px !important;
+}
+.vol_max {
+    background: url(../../img/player/small/vol_but2.png) no-repeat 0 -13px !important;
+}
+.volume_helper {
+    float: left;
+    width: 7px;
+    border-bottom-right-radius: 1px;
+    height: 13px;
+    background: url(../../img/player/small/vol_progress.png) repeat-x 0px 0px !important;
+    position: absolute;
+    left: 3px;
+    top: 4px;
+}
+
+#slider-vertical {
+    border: none;
+    background: none;
+}
+
+.l_vol_progress {
+    position: relative;
+    background: url(../../img/player/small/l_vol_progress.png) no-repeat 0px 0px;
+    left: -10px;
+}
+
+.volume_slider_slider_volume .ui-slider-range {
+    background: url(../../img/player/small/vol_progress.png) repeat-x -5px 0px !important;
+    margin-left: -4px;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    max-width: 100%;
+    height: 16px;
+    background: white;
+    margin-left: 3px;
+}
+
+#slider-vertical .ui-slider-handle {
+    border: none !important;
+    background: url(../../img/player/small/vol_cross.png) no-repeat !important;
+    top: 0 !important;
+    outline: none !important;
+    margin-left: -10px;
+    width: 13px;
+    height: 13px;
+}
+
+.volume_max_circle:hover {
+    background-position: 0 -13px;
+}
+
+.volume_max_circle {
+    background: url(../../img/player/small/vol_but2.png) no-repeat;
+    width: 13px;
+    height: 13px;
+    margin: 4px 0 0 2px;
+}
+
+.player_controls_shuffle .t_shuffle:hover {
+    background-position: 0 -16px;
+}
+
+.player_controls_shuffle .t_shuffle {
+    background: url(../../img/player/small/shuffle.png) no-repeat;
+    width: 20px;
+    height: 16px;
+    margin: 3px 0 0 2px;
+}
+
+.player_controls_time_current, .player_controls_time_full {
+    float: left;
+}
+
+.time {
+    float: left;
+    margin: 3px 0 0 7px;
+    width: 37px;
+}
+.timer {
+    float: right;
+    margin: 3px 0 0 7px;
+}
+.time, .timer {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.timeline {
+    float: left;
+    width: 352px;
+    height: 24px;
+    margin: 8px 0 0 0;
+}
+
+#progress {
+    width: 353px;
+    height: 24px;
+    position: relative;
+}
+
+.timeline span {
+    display: inline-block;
+}
+
+#current {
+    width: 347px;
+}
+
+.ui-widget-content {
+    background: none;
+    border: none;
+}
+
+#current .ui-slider-range {
+    height: 6px;
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    max-width: 100%;
+    height: 16px;
+    background: white;
+    margin-left: 3px;
+}
+
+#current a {
+    background: url(../../img/player/small/dot.png) no-repeat 0 0px;
+    border: 1px solid white;
+    border-radius: 4px 4px 4px 4px;
+    outline: none;
+    width: 4px;
+    height: 4px;
+    margin: 0;
+    top: 0px;
+}
+
+#current   .hover_buffered {
+    background: url(../../img/player/small/hover_buffer.png) repeat-x !important;
+    height: 10px !important;
+    top: -24px !important;
+    border-radius: 5px 0 0 5px;
+    -moz-border-radius: 5px 0 0 5px;
+    -webkit-border-radius: 5px 0 0 5px;
+    -khtml-border-radius: 5px 0 0 5px;
+}
+
+#current  .hover_buffered_end {
+    border-radius: 6px !important;
+}
+
+.buffered_end {
+    border-radius: 3px !important;
+}
+
+#buffered {
+    background: url(../../img/player/small/buffer.png) repeat-x;
+    margin: 22px 0 0 0;
+    border-radius: 3px 0 0 3px;
+    -moz-border-radius: 3px 0 0 3px;
+    -webkit-border-radius: 3px 0 0 3px;
+    -khtml-border-radius: 3px 0 0 3px;
+    height: 6px;
+    display: inline-block;
+    position: absolute;
+    top: -22px;
+}
+
+.progress_helper {
+    height: 6px;
+    background: white;
+    border-radius: 3px 0 0 3px;
+    float: left;
+    width: 3px;
+    position: relative;
+    top: -14px;
+    left: 0;
+}
+
+#current  .progress_dot
+{background: url(../../img/player/small/hover_dot.png) no-repeat !important;
+    width:8px;
+    height:8px;
+    top:-2px !important;
+    border: 1px solid white;
+    border-radius: 4px 4px 4px 4px;
+}
+#current .progress_hover
+{background: url(../../img/player/small/progress_hover.png) repeat-x !important;
+    height:10px;
+    border-radius:0 5px 5px 0;
+    -moz-border-radius:0 5px 5px 0;
+    -webkit-border-radius:0 5px 5px 0;
+    -khtml-border-radius:0 5px 5px 0;
+    margin: -2px 0 0 6px;
+}
+.hover_helper
+{
+    background: url(../../img/player/small/hover_helper.png) no-repeat !important;
+    width:6px !important;
+    height:10px !important;
+    border-radius: 5px 0 0 5px;
+    top: -16px;
+}

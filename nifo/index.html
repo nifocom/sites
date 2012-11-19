@@ -1,0 +1,181 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US" manifest="index.manifest">
+<head>
+        <meta charset="UTF-8">
+        <title>Nifo</title>
+        <link rel="stylesheet" href="css/index/style.css" />
+
+    <script src="js/nifo/core/common.js" type="text/javascript"></script>
+    <script src="js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/libs/jquery.countdown.js" type="text/javascript"></script>
+    <script src="js/libs/store.js"  type="text/javascript"> </script>
+
+    <script src="js/libs/PxLoader.js" type="text/javascript"></script>
+    <script src="js/libs/PxLoaderImage.js" type="text/javascript"></script>
+
+    <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+
+    <script src="http://api.easyjquery.com/easyjquery.js"></script>
+
+    <script src="js/libs/jquery.transform.min.js"></script>
+    <script src="js/libs/jquery.easing.js"></script>
+
+
+
+    <script src="js/libs/raphael.js"></script>
+    <script src="js/libs/scale.raphael.js"></script>
+    <script src="js/nifo/elements/map.js"></script>
+
+    <script src="js/nifo/core/frameAnimator.js"></script>
+    <script src="js/nifo/core/location.js"></script>
+
+    <script src="js/nifo/pages/index/validation.js"></script>
+    <script src="js/nifo/pages/index/jquery.gaussian.js"></script>
+    <script src="js/nifo/pages/index/transform.js"></script>
+    <script src="js/nifo/pages/index/indexController.js"></script>
+
+
+
+</head>
+<body>
+        <div id="all">
+		    <div id="for_contact_form">
+			    <div id="first_contact" class="first_contact">
+				<div class="first_contact_inner">
+					<h2>Reason<span> for Contact</span></h2>
+					<a href="#"><span  class="closer"> </span></a>
+					<ul id="who_are_you_img">
+						<li><img id="contactReason_employment" style="" src="img/index/contactReason/employment/Employment0000.png"/></li>
+						<li><img id="contactReason_partnership" src="img/index/contactReason/partnership/Partnership0000.png"/></li>
+						<li><img id="contactReason_investment" src="img/index/contactReason/investment/Investment0000.png"/></li>
+					</ul>
+					<ul id="who_are_you">
+					
+                        <div id="mb_menu" class="mb_menu">
+                            
+                            <li>
+
+                            <a onclick='SetCategory(this);' href="#" data-speed="1200" data-easing="easeInExpo">Employment</a>
+                        </li>
+                            
+						<li>
+
+                            <a onclick='SetCategory(this);' href="#" data-speed="1000" data-easing="easeOutBack">Partnership</a>
+                        </li>
+                           
+						<li>
+
+                            <a onclick='SetCategory(this);' href="#" data-speed="1000" data-easing="easeOutBack">Investment</a>
+                        </li>
+						</div>
+					</ul>
+				</div>
+			</div>
+			    <div id="mb_content_wrapper" class="mb_content_wrapper">
+                <span class="mb_close"></span>
+                <div class="mb_content">
+                    <h2>Contact <span>Us</span> </h2>
+                    <div class="mb_content_inner">
+                        <form id="send_form" action="" onsubmit="">
+                            <div id="f_name" >
+                                <label>Your name*</label>
+                                <input class="focus" id="fullname" type="text" name="name" placeholder="Please provide your First and Last name"/>
+                            </div>
+                            <div id="f_email">
+                                <label>Your email address*</label>
+                                <input class="focus" id="email" placeholder="Please input a Valid Email address" type="text"  name="email" />
+                            </div>
+                            <div id="f_phone">
+                                <label>Your phone number</label>
+                                <input id="phone" placeholder="We strongly recommend that you provide us with a phone number so someone from the NiFo team may contact you" type="text" name="phone" class="focus phone" />
+                            </div>
+                            <div id="f_message">
+                                <label>Your message*</label>
+                                <textarea style="resize: none;" placeholder="Please let us know that nature of your inquiry" id="about" class="text-input focus" type="textarea" name="message" ></textarea>
+                            </div>
+                            <div id="f_send">
+                                <input type="submit" value="" id="send"/>
+                                <div class='loader-feedback'></div>
+                            </div>
+                        </form>
+                        <div class="suggest2">
+                            &nbsp;
+                            <span style="font-size: 12px; " >* required fields </span>
+                            <br>
+                            <b>All inquiries will be answered</b> by a NiFo team member within 24 hours</div>
+                    </div>
+                </div>
+            </div>
+                <div id="notification" class="notification-popup">
+				<div class="notification-popup-inner">
+					<h2>Notification</h2>
+					<a href="#"><span  class="closer"> </span></a>
+					<div class='notification-body'>
+						<p>Thank you for your feedback.</p>
+						<p>We`ll contact you within next 24 hours.</p>
+					</div>
+					<div class='notification-footer'>
+						<input class='btn' type="button" onclick='ClosePopup(this);' value=""/>
+					</div>
+				</div>
+			</div>
+            </div>
+
+            <div id="content">
+            <div id="logo">
+                <img id="animated-element1" src="img/index/logo/n01.png" alt="">
+                <img id="animated-element2" src="img/index/logo/i01.png" alt="">
+                <img id="animated-element3" src="img/index/logo/f01.png" alt="">
+                <img id="animated-element4" src="img/index/logo/o01.png" alt="">
+                <h1><span>next in</span> <span class="blur">first out</span></h1>
+            </div>
+            <div id="main" role="main">
+                <div id="shad"><div id="circles">
+                    <div id="counter" class="digital">
+
+                    </div>
+                </div> </div>
+				<div class="digital dname">
+					<ul>
+						<li><span>Days</span></li>
+						<li><span>Hours</span></li>
+						<li><span>Minutes</span></li>
+						<li><span>Seconds</span></li>
+					</ul>
+				</div>
+            </div>
+            </div>
+
+            <br />
+            <br />
+            <div id="allfooter">
+                <div id="under_logo">
+                    <div id="under_logo">
+                        <div class="latt">
+                            
+                        </div>
+                        <div class="map">
+                            <div id="small_map" style="overflow-x: hidden; overflow-y: hidden;  left: 0px; top: 7px; width: 280px; height:120px;  ">
+                            </div>
+                        </div>
+                        <div id="links">
+							<ul>
+                                <li><a href="http://www.facebook.com/NextInFirstOut" target="_blank" class="face"></a></li>
+                                <li><a href="#" class="twitt"></a></li>
+                                <li><a href="#" class="link"></a></li>
+                            </ul>
+                           <div class="contacti"><a href="#" onClick="return false" class="cont open"></a></div> 
+                        </div>
+
+                    </div>
+                    <p><span>Copyright 2012 Nifo Inc. All rights reserved.</span></p>
+                </div>
+            </div>
+
+        </div>
+        <div id="mb_pattern" class="mb_pattern"></div>
+        <div class="overlay"></div>
+
+</body>
+</html>

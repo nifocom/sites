@@ -1,0 +1,170 @@
+﻿<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <meta charset="UTF-8">
+    <title>Player</title>
+
+
+    <script src="js/tools.js" type="text/javascript"></script>
+    <script src="libs/jquery.min.js" type="text/javascript"></script>
+    <script src="libs/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/playlist.js" type="text/javascript"></script>
+    <script src="js/simplePlayer.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" href="css/jquery-ui.css" type="text/css"/>
+    <link rel="stylesheet" href="css/player/player.css" type="text/css"/>
+    <link rel="stylesheet" href="css/player/playercontrols.css" type="text/css"/>
+</head>
+
+<body>
+
+<div id="container">
+
+    <div id="draggable" class="ui-widget-content">
+        <div id="fs-container">
+            <div id="fs-inner">
+                <div id="fs">
+                    <div id="top_control">
+                        <div class="l_top_control">
+                            <div class="t_volume">
+                                <div class="t_left_panel_1">
+                                    <div id="soundOnOff" switch="1" class="t_vol_dot vp_soundOnOff"></div>
+                                </div>
+                                <div class="t_left_panel_2">
+                                    <div class="t_vol_slider">
+                                        <div class='volume_helper'></div>
+                                        <div id="slider-vertical" class="vp_volume" style="height:13px;width:56px"><span
+                                                class="l_vol_progress"></span></div>
+                                    </div>
+                                </div>
+                                <div class="t_left_panel_3">
+                                    <div class="t_vol_circle vp_volumeMax"></div>
+                                </div>
+                            </div>
+                            <div class="t_left_panel_4">
+                                <div class="t_shuffle"></div>
+                            </div>
+                        </div>
+                        <div class="top_center">
+                            <div class="t_l_center_time"><span id="currenttime" class="time "></span></div>
+                            <div class="t_time_body">
+					            <span id="progress">
+                                             <div id="smallVideoContainer">
+                                                 <div class="small_video"
+                                                      style="display: none; position: absolute; margin-top:15px;">
+                                                     <!-- <div class="ajax_loader ajax_loader_active"></div> -->
+                                                     <video id="smallVideo" class="smallVideo"
+                                                            style="display: none;padding-left: 20px; margin-top: 30px;"></video>
+                                                     <span class="t"></span>
+                                                 </div>
+                                             </div>
+                                    <div id="current" class="vp_timeline"><span class="r_corner"></span></div>
+                                    <div class='progress_helper'></div>
+					            </span>
+                            </div>
+                            <div class="t_r_center_time"><span id="duration" class="timer "></span></div>
+                        </div>
+                        <div class="r_top_control">
+                            <div class="t_left_panel_5">
+                                <div class="t_repeat"></div>
+                            </div>
+                            <div class="t_left_panel_6">
+                                <div id="previousVideo" switch="1" class="t_prev vp_previous"></div>
+                                <div class="t_play"></div>
+                                <div id="nextVideo" switch="1" class="t_next vp_next"></div>
+                            </div>
+                            <div class="t_left_panel_7">
+                                <div class="t_close">
+                                    <span class="p_half"></span>
+                                    <span id="enter-exit-fs" class="p_full"></span>
+                                    <span class="p_close"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="about_video">
+                        <div>
+                            <span class="v_genre"></span>
+                            <span class="v_name"></span>
+                            <span class="v_produce"></span>
+                            <span class="v_rezo"></span>
+                        </div>
+                    </div>
+                    <div id="divPlayer">
+                        <div class="player_inner">
+                            <video id="myvideo" class="draggable halfsize" poster="" preload="auto">
+                            </video>
+                        </div>
+
+                        <div class="bottom_info_share">
+                            <h1><b>Share</b> this video</h1>
+                            <span class="share_close">
+                        </div>
+
+                        <div class="bottom_info">
+                            <div><span>1</span></div>
+                            <div><span>2</span></div>
+                            <div><span>3</span></div>
+                        </div>
+
+                        <div class="drag">
+                            <div id="controls" style='width:410px;'>
+                                <div id='leftSide'></div>
+                                <div id='middleSide'></div>
+                                <div id='rightSide'></div>
+                                <div id="controles">
+                                    <div id='main_controls_wrapper'>
+                                        <div class="progress_bar">
+                                            <div class="dot vp_soundOnOff"></div>
+                                            <div class="bar"></div>
+                                            <div class='fullscreen_volume_helper'></div>
+                                            <div class="circle vp_volumeMax"></div>
+                                        </div>
+                                        <div style='width: 142px;margin: 0 auto;position: relative;top: -41px;'>
+                                            <div class="play_pause">
+                                                <div class="pl_prev vp_previous"></div>
+                                                <div class="t_play play"></div>
+                                                <div class="pl_next vp_next"></div>
+                                            </div>
+                                        </div>
+
+                                        <div class="full_screen">
+
+                                            <div id="control_size" class="long_control"
+                                                 onclick='player.toggleControlSize(this);'></div>
+                                            <div id="fullscreen" class="f_screen"
+                                                 onclick="player.exitFullscreen()"></div>
+                                        </div>
+                                        <div class="p_control">
+                                            <div class="b_shuffle t_shuffle"></div>
+                                            <div class="b_repeat t_repeat "></div>
+
+                                        </div>
+
+                                    </div>
+                                    <div id="tracer">
+                                        <span class="time"></span>
+
+                                        <div id="f_progress">
+                                            <div id="progressbar" class="vp_timeline"></div>
+                                        </div>
+                                        <div class='fullscreen_progress_helper'></div>
+                                        <span class="timer "></span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+</body>
+</html>

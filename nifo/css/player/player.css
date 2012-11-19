@@ -1,0 +1,383 @@
+@import url("../normalize.css");
+
+html {
+    width: 100%;
+}
+
+body {
+    background: #c3c3c3;
+}
+
+ul {
+    list-style: none;
+}
+
+#container {
+    width: 800px;
+    margin: 50px auto 0;
+    background: #000;
+    border-radius: 9px 9px 0 0;
+    -webkit-border-radius: 9px 9px 0 0;
+    -moz-border-radius: 9px 9px 0 0;
+    -khtml-border-radius: 9px 9px 0 0;
+    display: block;
+
+}
+
+#player {
+    background: url(../../img/player/back_footer.png) no-repeat;
+    width: 421px;
+    height: 62px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+    top: 190px;
+}
+
+#controles {
+    width: 410px;
+}
+
+#controles ul {
+    height: 32px;
+    margin-bottom: 0;
+    padding: 5px 0 0 20px
+}
+
+#controles ul li {
+    float: left;
+    margin: 8px 0 0 0;
+}
+
+#controles ul li div {
+    float: left;
+}
+
+#controles div {
+    display: block
+}
+
+.progress_bar {
+    background: url(../../img/player/controls/vol_bg.png) no-repeat 19px 0;
+    position: relative;
+    top: 14px;
+    left: 12px;
+}
+
+.progress_bar .dot {
+    background: url(../../img/player/controls/vol_dot.png) no-repeat 0 0;
+    width: 10px;
+    height: 10px;
+    cursor: pointer
+}
+
+.progress_bar .dot:hover {
+    background-position: 0 -15px;
+}
+
+.progress_bar .bar {
+    height: 11px;
+    margin: 0 11px 0 9px;
+    width: 64px;
+    position: relative;
+    top: -10px;
+    left: 10px;
+}
+
+.progress_bar .circle {
+    background: url(../../img/player/controls/vol_circle.png) no-repeat left top;
+    width: 14px;
+    height: 14px;
+    margin: -2px 0px 0px 7px;
+    position: relative;
+    top: -31px;
+    left: 95px;
+}
+
+.progress_bar .circle:hover {
+    background-position: 0 -32px
+}
+
+.progress_bar .vol_max {
+    background: url("../../img/player/controls/vol_circle.png") no-repeat 0 -16px !important;
+)
+}
+
+.f_hover_about {
+    height: 20px;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+.about_video_hover {
+    opacity: 1 !important;
+    margin-bottom: -22px !important;
+
+}
+
+.play_pause .inactive_next:hover, .play_pause .inactive_prev:hover {
+
+    cursor: default !important;
+}
+
+.play_pause .inactive_next:hover {
+    background: url(../../img/player/controls/pl_next.png) no-repeat !important;
+}
+
+.play_pause .inactive_prev:hover {
+    background: url(../../img/player/controls/pl_prev.png) no-repeat !important;
+}
+
+#progressbar #buffered {
+}
+
+ul .progress_bar .off {
+    background: url(../../img/player/controls/vol_dot.png) no-repeat 0 -30px !important;
+}
+
+.play_pause {
+    background: url(../../img/player/controls/p_p_controls.png) no-repeat;
+    width: 142px;
+    height: 35px;
+    margin: -2px 0 0 0 !important;
+    position: relative;
+}
+
+.play_pause .paused {
+    background: url(../../img/player/controls/pause.png) no-repeat;
+}
+
+.play_pause div {
+    margin: 10px 0 0 0;
+}
+
+.play_pause .inactive_prev, .play_pause .inactive_next {
+    opacity: 0.8
+}
+
+.play_pause .inactive_prev {
+    background: url(../../img/player/controls/pl_prev.png) no-repeat;
+}
+
+.play_pause .inactive_next {
+    background: url(../../img/player/controls/pl_next.png) no-repeat;
+}
+
+.pl_prev {
+    background: url(../../img/player/controls/pl_prev.png) no-repeat;
+    width: 45px;
+    height: 27px;
+    margin: 3px 3px 0 2px !important;
+    position: relative;
+    top: 3px;
+
+}
+
+.play {
+    background: url(../../img/player/controls/play.png) no-repeat;
+    width: 48px;
+    height: 32px;
+    margin: 1px 0 0 -3px !important;
+    text-indent: -99999px;
+    position: relative;
+    top: -26px;
+    left: 50px;
+}
+
+.pl_next {
+    background: url(../../img/player/controls/pl_next.png) no-repeat;
+    width: 45px;
+    height: 27px;
+    margin: 3px 2px 0 0px !important;
+    position: relative;
+    top: -60px;
+    left: 95px;
+}
+
+#tracer {
+    position: relative;
+    top: -43px;
+}
+
+.full_screen {
+    float: right !important;
+    position: relative;
+    top: -68px;
+    right: 37px;
+}
+
+.f_screen {
+    background: url(../../img/player/controls/full_screen.png) no-repeat;
+    width: 22px;
+    height: 16px;
+    position: relative;
+    top: -16px;
+    left: 26px;
+}
+
+.long_control {
+    background: url(../../img/player/controls/long_control.png) no-repeat;
+    width: 22px;
+    height: 16px;
+}
+
+.short_control {
+    background: url(../../img/player/controls/short_control.png) no-repeat;
+    width: 22px;
+    height: 16px;
+}
+
+.progress_bar .circle, .progress_bar .off, .bar, #slider-vertical, #slider-vertical .ui-slider-handle {
+    cursor: pointer;
+}
+
+.play, .full_screen, .pl_next, .pl_prev {
+    opacity: 0.8;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    -webkit-transition: all 0.3s ease 0s;
+    -moz-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+}
+
+.pl_prev:hover {
+    background: url(../../img/player/controls/pl_prev_hover.png) no-repeat;
+
+}
+
+.pl_next:hover {
+    background: url(../../img/player/controls/pl_next_hover.png) no-repeat;
+}
+
+.pl_prev:hover, .play:hover, .pl_next:hover, .full_screen:hover {
+    opacity: 1;
+}
+
+.tracer_progress {
+    background: url(../../img/player/controls/tracer.png) no-repeat;
+    width: 287px;
+    height: 9px;
+    margin: 0 0 0 0;
+    float: left
+}
+
+.time, .timer {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.time {
+    float: left;
+    margin: 3px 0 0 7px;
+    width: 37px;
+}
+
+.timer {
+    float: right;
+    margin: 3px 0 0 7px;
+}
+
+.halfsize {
+    width: 800px !important;
+    height: 420px !important;
+}
+
+#tracer .time, #tracer .timer {
+    font-size: 12px;
+    color: #fff;
+}
+
+#tracer .time {
+    position: relative;
+    top: -7px;
+    left: 12px;
+
+}
+
+#tracer .timer {
+    position: relative;
+    top: -14px;
+    right: -65px;
+}
+
+.bottom_info {
+    background: url(../../img/player/small/bottom_info.png) repeat-x;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    margin: -53px 0 -50px 0;
+    opacity: 0;
+}
+
+.bottom_info  div {
+    width: 100px;
+    float: left;
+    margin: 12px 0 0 0;
+}
+
+.bottom_info div span {
+    color: #ABABAB;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: Trebuchet MS;
+    line-height: 25px;
+}
+
+.bottom_info  span:hover {
+    color: #2a8ac7;
+    cursor: pointer;
+}
+
+.bottom_info_share {
+    background: url(../../img/player/small/bottom_info_share.png) no-repeat;
+    width: 520px;
+    height: 460px;
+    position: relative;
+    margin: -435px auto -88px;
+    display: none
+}
+
+.bottom_info_share h1 {
+    color: #fff;
+    font-size: 16px;
+    position: relative;
+    bottom: -67px;
+    text-align: center;
+}
+
+.share_close {
+    background: url("../../img/index/close.png") no-repeat scroll left top transparent;
+    cursor: pointer;
+    height: 16px;
+    float: right;
+    margin: 39px 71px 0 0;
+    width: 16px;
+    position: relative;
+}
+
+.share_close:hover {
+    background: url("../../img/index/close.png") no-repeat scroll left -16px transparent;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #fs {
+        display: table;
+    }
+
+    .player_inner {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+@-moz-document url-prefix() {
+    .player_inner
+    {
+        /*padding:20px 0;*/
+    }
+}
